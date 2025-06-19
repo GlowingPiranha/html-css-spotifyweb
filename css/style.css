@@ -40,12 +40,13 @@ footer {
 
 .row {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
+  gap: 20px;
 }
 
 .col {
   max-width: calc(100% / 6);
-  background-color: red;
 }
 
 section {
@@ -211,7 +212,7 @@ li {
   cursor: pointer;
 }
 
-/* MAIN */
+/* CENTER MENU */
 
 
 .center-menu {
@@ -220,7 +221,7 @@ li {
   justify-content: center;
   gap: 20px;
   padding: 15px 30px;
-  margin-top: 50px;
+  margin-top: 20px;
   color: white;
 }
 
@@ -251,7 +252,66 @@ li {
   cursor: pointer;
 }
 
+/* RECENTLY PLAYED */
+.title {
+  margin: 10px 30px;
+}
+
+.music-card {
+  width: 250px;
+}
+
+.card-img {
+
+  width: 250px;
+  height: 250px;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.card-img:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+}
+
+.overlay i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5em;
+  color: #fff;
+}
+
+.card-txt {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-txt h4,
+.card-txt p {
+  margin-top: 5px;
+}
+
+
+
 /* UTILITIES */
+
+.fs-14 {
+  font-size: 14px;
+}
 
 .fs-12 {
   font-size: 12px;
@@ -259,6 +319,10 @@ li {
 
 .my-10 {
   margin: 10px 0;
+}
+
+.mx-30 {
+  margin: 0 30px;
 }
 
 /* COLORS */
