@@ -14,13 +14,12 @@ main {
   display: flex;
   height: calc(100vh - 120px);
   background-color: #141922;
-
 }
 
 header {
   position: relative;
   max-height: 100px;
-  background-color: #080b12;
+  background-color: rgba(8, 11, 18, 0.5);
   color: #fff;
   display: flex;
   justify-content: right;
@@ -28,6 +27,8 @@ header {
 }
 
 footer {
+  display: flex;
+  justify-content: center;
   height: 120px;
   background-color: #282828;
   width: 100%;
@@ -38,8 +39,8 @@ footer {
 }
 
 .row {
-  width: 100%;
-
+  display: flex;
+  flex-direction: row;
 }
 
 .col {
@@ -70,12 +71,11 @@ section {
 
 }
 
-#sidebar nav {
-  margin-left: 20px;
-}
-
 .nav-side {
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 li {
@@ -84,9 +84,112 @@ li {
 
 .home-buttons {
   margin: 10px 0;
+  padding-left: 20px;
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
 }
 
-/* .playlist {} */
+.home-buttons img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.home-buttons:hover {
+  color: #fff;
+  border-left: 2px solid lightgreen;
+  cursor: pointer;
+}
+
+
+
+.playlist {
+  margin: 30px 20px;
+  font-weight: 600;
+}
+
+.playlist h4 {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.playlist h4,
+.square-box {
+  margin: 5px 0;
+}
+
+.playlist li {
+  margin-top: 5px;
+}
+
+.playlist li:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.user {
+  margin: 10px 20px;
+}
+
+.square-box {
+  background-color: #797979;
+  width: 25px;
+  height: 25px;
+  color: #000;
+  text-align: center;
+  margin-right: 10px;
+
+}
+
+.square-box i {
+  vertical-align: middle;
+  font-weight: bolder;
+}
+
+.playlist-add {
+  display: flex;
+  flex-direction: row;
+}
+
+.playlist-add:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.download {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #797979;
+  font-weight: 700;
+}
+
+.download:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.profile {
+  color: #fff;
+  font-weight: bold;
+}
+
+.profile:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.user img {
+  width: 20px;
+  margin-right: 10px;
+  filter: brightness(70%);
+}
+
+.profile-icon {
+  background-color: #797979;
+  border-radius: 50%;
+}
+
+
 
 /* HEADER */
 
@@ -103,23 +206,54 @@ li {
   border: 1px solid #fff;
 }
 
+.upgrade:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
 /* MAIN */
 
 
 .center-menu {
   display: flex;
-
+  text-align: center;
+  justify-content: center;
   gap: 20px;
   padding: 15px 30px;
   margin-top: 20px;
   color: white;
 }
 
+.center-menu ul {
+  display: flex;
+}
+
 .center-menu li {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0 10px;
   display: inline-block;
+  padding-bottom: 3px;
 }
 
 
+.center-menu ul:first-child::after {
+  width: 20%;
+  height: 2px;
+  background-color: lightgreen;
+}
+
+
+/* UTILITIES */
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.my-10 {
+  margin: 10px 0;
+}
 
 /* COLORS */
 
