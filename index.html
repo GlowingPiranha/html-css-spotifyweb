@@ -88,9 +88,9 @@
       <!-- RECENTLY PLAYED -->
 
       <div class="container">
-        <h2 class="title color-white b">Recently played</h2>
+        <h2 class="title color-white b mb-30">Recently played</h2>
         <div class="row">
-          <div class="col w-250">
+          <div class="col w-200">
             <div class="music-card">
               <div class="card-img">
                 <img class="" src="./img/metal_lifting.jpg" alt="metal-lifting">
@@ -105,7 +105,7 @@
             </div>
           </div>
 
-          <div class="col w-250">
+          <div class="col w-200">
             <div class="music-card">
               <div class="card-img">
                 <img class="" src="./img/stranger.jpeg" alt="stranger-things">
@@ -120,7 +120,7 @@
             </div>
           </div>
 
-          <div class="col w-250">
+          <div class="col w-200">
             <div class="music-card">
               <div class="card-img">
                 <img class="" src="./img/aquietplace.jpeg" alt="a-quiet-place">
@@ -135,7 +135,7 @@
             </div>
           </div>
 
-          <div class="col w-250">
+          <div class="col w-200">
             <div class="music-card">
               <div class="card-img">
                 <img class="" src="./img/split.jpeg" alt="split">
@@ -150,7 +150,7 @@
             </div>
           </div>
 
-          <div class="col w-250">
+          <div class="col w-200">
             <div class="music-card">
               <div class="card-img">
                 <img class="" src="./img/cure.jpeg" alt="a-cure-for-wellness">
@@ -165,7 +165,7 @@
             </div>
           </div>
 
-          <div class="col w-250">
+          <div class="col w-200">
             <div class="music-card">
               <div class="card-img">
                 <img class="" src="./img/sinister.jpeg" alt="sinister">
@@ -188,7 +188,7 @@
           Creato per John doe</h2>
         <p class="color-gray fs-12 b mx-30">più ascolti, più accurati saranno i suggerimenti</p>
         <div class="row">
-          <div class="col w-250 my-30">
+          <div class="col w-200 my-30">
             <div class="music-card">
               <div class="card-img">
                 <img class="" src="./img/radar.jpeg" alt="release-radar">
@@ -199,7 +199,7 @@
             </div>
           </div>
 
-          <div class="col w-250 my-30">
+          <div class="col w-200 my-30">
             <div class="music-card">
               <div class="card-img">
                 <img class="" src="./img/mixdaily.jpeg" alt="daily-mix">
@@ -217,7 +217,7 @@
           Artisti più popolari</h2>
         <p class="color-gray fs-12 b mx-30">più ascolti, più accurati saranno i suggerimenti</p>
         <div class="row">
-          <div class="col w-250 my-30">
+          <div class="col w-200 my-30">
             <div class="music-card">
               <div class="card-img">
                 <img class="circled" src="./img/youg.jpeg" alt="lana-del-rey">
@@ -228,7 +228,7 @@
             </div>
           </div>
 
-          <div class="col w-250 my-30">
+          <div class="col w-200 my-30">
             <div class="music-card">
               <div class="card-img">
                 <img class="circled" src="./img/einaudi.jpeg" alt="einaudi">
@@ -247,23 +247,52 @@
 
   </main>
   <footer>
-    <div class="container">
+    <div class="container w-100x y-middle">
       <div class="row-footer">
         <!-- left player -->
         <div class="left-player">
-          <img src="./img/sinister.jpeg" alt="sinister">
-          <span>
-            <p class="color-white fs-14">Sinister</p>
-            <p class="color-gray fs-12">Brano Nome</p>
-          </span>
-
+          <div class="left-p">
+            <img src="./img/sinister.jpeg" alt="sinister">
+            <span>
+              <p class="color-white b fs-14">Sinister</p>
+              <p class="color-gray fs-12">Brano Nome</p>
+            </span>
+          </div>
+          <div class="right-p color-gray">
+            <i class="fa-regular fa-heart">&nbsp;&nbsp;</i>
+            <i class="fa-regular fa-folder"></i>
+          </div>
         </div>
 
         <!-- center player -->
         <div class="player">
+          <div class="top-player color-white">
+            <i class="fa-solid fa-shuffle"></i>
+            <i class="fa-solid fa-forward-step"></i>
+            <i class="fa-regular fa-circle-play"></i>
+            <i class="fa-solid fa-forward-step"></i>
+            <i class="fa-solid fa-rotate-right"></i>
+          </div>
+          <div class="bot-player color-white flex">
+            <span class="time-elapsed fs-12 mx-30">0:25</span>
+            <div class="time-bar">
+              <div class="elapsed-bar">
+                <div class="control-point"></div>
+              </div>
+            </div>
+            <span class="time-total fs-12 mx-30">4:35</span>
+          </div>
         </div>
         <!-- right player -->
-        <div class="right-player">
+        <div class="right-player color-white flex">
+          <div>
+            <i class="fa-solid fa-list"></i>
+            <i class="fa-solid fa-display"></i>
+            <i class="fa-solid fa-volume-high"></i>
+          </div>
+          <div class="volume-bar">
+            <div class="current-volume"></div>
+          </div>
         </div>
       </div>
     </div>
