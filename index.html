@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
@@ -13,6 +14,7 @@
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Spotify</title>
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -62,6 +64,29 @@
       </nav>
     </div>
 
+    <div id="sidebar-2">
+      <img id="logo-small" src="./img/logo-small.svg" alt="logo-small">
+
+      <nav class="nav-side color-gray">
+        <div>
+
+          <ul class="home-2">
+            <li class="home-buttons-2"><img src="./img/home.svg" alt=""></li>
+            <li class="home-buttons-2"><img src="./img/search.svg" alt=""></li>
+            <li class="home-buttons-2"><img src="./img/libreria.svg" alt=""></li>
+
+        </div>
+        <div class="user">
+          <div class="download-icon-2">
+            <img src="./img/download.svg" alt="download-icon-2">
+          </div>
+          <div class="profile-icon-2">
+            <img src="./img/profile.svg" alt="profile-icon-2">
+          </div>
+        </div>
+      </nav>
+    </div>
+
     <!-- MAIN SECTION -->
 
     <section class="overflow-scroll">
@@ -76,7 +101,7 @@
 
       <div class="center-menu color-gray margin-top-50 ">
         <ul>
-          <li>in evidenza</li>
+          <li class="color-white">in evidenza</li>
           <li>podcast</li>
           <li>classifiche</li>
           <li>generi e mood</li>
