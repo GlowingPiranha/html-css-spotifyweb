@@ -326,6 +326,10 @@ li {
 
 /* FOOTER */
 
+.player {
+  width: 50%;
+}
+
 .left-player {
   display: flex;
   flex-direction: row;
@@ -351,7 +355,7 @@ li {
 
 .time-bar {
   position: relative;
-  width: 500px;
+  width: 90%;
   height: 5px;
   border-radius: 10px;
   background-color: #797979;
@@ -380,12 +384,18 @@ li {
   opacity: 0;
 }
 
+.time-elapsed,
+.time-total {
+  width: 3%;
+}
+
 .time-bar:hover .elapsed-bar {
   background-color: #99e02d;
   cursor: pointer;
 }
 
-.time-bar:hover .control-point {
+.time-bar:hover .control-point,
+.volume-bar:hover .control-point {
   opacity: 1;
   cursor: pointer;
 }
@@ -408,6 +418,13 @@ li {
   width: 20%;
   border-radius: 10px;
 }
+
+.volume-bar:hover .current-volume {
+  background-color: #99e02d;
+  cursor: pointer;
+}
+
+
 
 .top-player {
   display: flex;
