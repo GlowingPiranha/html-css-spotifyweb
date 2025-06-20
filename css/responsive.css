@@ -14,6 +14,8 @@
     width: calc(100% - 50px);
   }
 
+  /* SIDEBAR */
+
   #sidebar {
     display: none;
   }
@@ -50,12 +52,13 @@
   }
 
   .home-2 {
-    width: 50px;
+    width: 100%;
     align-content: center;
   }
 
   .home-buttons-2 {
-    width: 30px;
+    width: 100%;
+    text-align: center;
     padding: 5px;
   }
 
@@ -63,9 +66,32 @@
     width: 30px;
   }
 
-  .download-icon-2 img,
+  .user-2 {
+    width: 100%;
+  }
+
+  .download-icon-2,
+  .profile-icon-2 {
+    text-align: center;
+  }
+
+
+  .download-icon-2 img {
+    width: 20px;
+  }
+
   .profile-icon-2 img {
-    align-items: center;
+    width: 20px;
+    background-color: #797979;
+    border-radius: 50%;
+  }
+
+  /* CENTER MENU */
+
+  .center-menu {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
   }
 
 }
