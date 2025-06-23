@@ -89,8 +89,7 @@
   /* CENTER MENU */
 
   .center-menu {
-    width: 100%;
-    display: inline-flex;
+    display: flex;
     justify-content: center;
   }
 

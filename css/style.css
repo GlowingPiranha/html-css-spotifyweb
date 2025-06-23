@@ -46,7 +46,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 1rem;
+  gap: 2%;
   margin-left: 1rem;
 }
 
@@ -241,10 +241,12 @@ li {
   display: flex;
   text-align: center;
   justify-content: center;
-  gap: 2rem;
-  padding: 0px 30px;
+  flex-wrap: wrap;
+  gap: 1%;
+  padding-bottom: 30px;
   width: 100%;
   color: white;
+  margin-top: 10px;
 }
 
 .center-menu ul {
@@ -281,12 +283,12 @@ li {
 }
 
 .music-card {
-  width: 200px;
+  width: 100%;
 }
 
 .card-img {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   position: relative;
   display: flex;
 }
@@ -357,7 +359,7 @@ li {
 }
 
 .right-p {
-  margin-left: 40px;
+  margin-left: 2%;
 }
 
 .right-p i:hover {
@@ -368,7 +370,7 @@ li {
 .left-player img {
   width: 50px;
   height: 50px;
-  margin-right: 10px;
+  margin: 10px;
 }
 
 .time-bar {
@@ -515,7 +517,8 @@ li {
 }
 
 .w-200 {
-  width: 200px;
+  min-width: 200px;
+  max-width: 300px;
 }
 
 .fs-14 {
