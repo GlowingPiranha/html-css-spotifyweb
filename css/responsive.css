@@ -14,6 +14,10 @@
     width: calc(100% - 50px);
   }
 
+  .col {
+    width: calc(100% / 2 - 20px);
+  }
+
   /* SIDEBAR */
 
   #sidebar {
@@ -93,8 +97,10 @@
     justify-content: center;
   }
 
+
+
   /* FOOTER */
 
-  .toggle {}
+
 
 }

@@ -46,7 +46,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 2%;
+  gap: 20px;
   margin-left: 1rem;
 }
 
@@ -251,13 +251,16 @@ li {
 
 .center-menu ul {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .center-menu li {
   font-size: 14px;
+  padding: 5px;
   text-transform: uppercase;
   font-weight: bold;
-  margin: 0 10px;
+  margin: 0 15px;
   display: flex;
   flex-direction: column;
   padding-bottom: 3px;
@@ -343,13 +346,14 @@ li {
 /* FOOTER */
 
 .player {
-  width: 50%;
+  width: 40%;
 }
 
 .left-player {
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 30%;
 }
 
 .left-p {
@@ -387,7 +391,7 @@ li {
   left: 0;
   height: 100%;
   background-color: silver;
-  width: 20%;
+  width: 30%;
   border-radius: 10px;
 }
 
@@ -404,9 +408,15 @@ li {
   opacity: 0;
 }
 
-.time-elapsed,
+.time-elapsed {
+  margin-left: 5px;
+  margin-right: 20px;
+}
+
+
 .time-total {
-  width: 3%;
+  margin-right: 5px;
+  margin-left: 20px;
 }
 
 .time-bar:hover .elapsed-bar {
@@ -421,23 +431,21 @@ li {
 }
 
 .right-player {
-  width: 20%;
+  width: 30%;
+  justify-content: end;
 }
 
 .volume-bar {
   position: relative;
   margin-left: 10px;
   width: 100%;
+  max-width: 100px;
   height: 5px;
   border-radius: 10px;
   background-color: #797979;
 }
 
-.toggle {
-  text-align: right;
-  width: 100%;
-
-}
+.toggle {}
 
 .current-volume {
   position: absolute;
@@ -517,8 +525,8 @@ li {
 }
 
 .w-200 {
-  min-width: 200px;
-  max-width: 300px;
+  min-width: 190px;
+  max-width: 250px;
 }
 
 .fs-14 {
